@@ -94,8 +94,13 @@
 
         <input type="checkbox" name="lecture" id="" onchange="showMessage(this, 'شطور يمييييييي')">
     </div>
-<script src="./index.js"></script>
-</body>
-</html>
+
+<script>
+window.showMessage = function(checkbox, subject) {
+    if (checkbox.checked) {
+        alert("Congratulations! You finished " + subject);
+    }
+};
+</script>
 </body>
 </html>
